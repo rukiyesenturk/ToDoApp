@@ -7,23 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA4D261328CD1B5300923D8F /* todolist.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FA4D261228CD1B5300923D8F /* todolist.sqlite */; };
 		FA89F87628C500A4003D1843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F87528C500A4003D1843 /* AppDelegate.swift */; };
 		FA89F87828C500A4003D1843 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F87728C500A4003D1843 /* SceneDelegate.swift */; };
-		FA89F87A28C500A4003D1843 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F87928C500A4003D1843 /* ViewController.swift */; };
+		FA89F87A28C500A4003D1843 /* ToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F87928C500A4003D1843 /* ToDoVC.swift */; };
 		FA89F87D28C500A4003D1843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA89F87B28C500A4003D1843 /* Main.storyboard */; };
 		FA89F87F28C500A6003D1843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA89F87E28C500A6003D1843 /* Assets.xcassets */; };
 		FA89F88228C500A6003D1843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA89F88028C500A6003D1843 /* LaunchScreen.storyboard */; };
+		FA89F88A28C5030C003D1843 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F88928C5030C003D1843 /* TableViewCell.swift */; };
+		FA89F88C28C504E6003D1843 /* RecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F88B28C504E6003D1843 /* RecordVC.swift */; };
+		FA89F88E28C50518003D1843 /* DetasilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F88D28C50518003D1843 /* DetasilVC.swift */; };
+		FA89F89028C507B6003D1843 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F88F28C507B6003D1843 /* ToDoList.swift */; };
+		FA89F8A828C50E6B003D1843 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8A728C50E6B003D1843 /* DetailProtocols.swift */; };
+		FA89F8AA28C510BE003D1843 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8A928C510BE003D1843 /* DetailRouter.swift */; };
+		FA89F8AC28C510DB003D1843 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8AB28C510DB003D1843 /* DetailInteractor.swift */; };
+		FA89F8AE28C510EB003D1843 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8AD28C510EB003D1843 /* DetailPresenter.swift */; };
+		FA89F8B028C512F8003D1843 /* RecordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8AF28C512F8003D1843 /* RecordPresenter.swift */; };
+		FA89F8B228C51308003D1843 /* RecordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8B128C51308003D1843 /* RecordInteractor.swift */; };
+		FA89F8B428C51316003D1843 /* RecordProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8B328C51316003D1843 /* RecordProtocols.swift */; };
+		FA89F8B628C51324003D1843 /* RecordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8B528C51324003D1843 /* RecordRouter.swift */; };
+		FA89F8B828C51529003D1843 /* ToDoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8B728C51529003D1843 /* ToDoPresenter.swift */; };
+		FA89F8BA28C51536003D1843 /* ToDoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8B928C51536003D1843 /* ToDoInteractor.swift */; };
+		FA89F8BC28C51544003D1843 /* ToDoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8BB28C51544003D1843 /* ToDoProtocols.swift */; };
+		FA89F8BE28C51553003D1843 /* ToDoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8BD28C51553003D1843 /* ToDoRouter.swift */; };
+		FA89F8CB28C51E21003D1843 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8C228C51E21003D1843 /* FMResultSet.m */; };
+		FA89F8CC28C51E21003D1843 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8C328C51E21003D1843 /* FMDatabasePool.m */; };
+		FA89F8CD28C51E21003D1843 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8C428C51E21003D1843 /* FMDatabase.m */; };
+		FA89F8CE28C51E21003D1843 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8C728C51E21003D1843 /* FMDatabaseAdditions.m */; };
+		FA89F8CF28C51E21003D1843 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FA89F8C928C51E21003D1843 /* FMDatabaseQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA4D261228CD1B5300923D8F /* todolist.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = todolist.sqlite; sourceTree = "<group>"; };
 		FA89F87228C500A4003D1843 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA89F87528C500A4003D1843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA89F87728C500A4003D1843 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA89F87928C500A4003D1843 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA89F87928C500A4003D1843 /* ToDoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoVC.swift; sourceTree = "<group>"; };
 		FA89F87C28C500A4003D1843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA89F87E28C500A6003D1843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA89F88128C500A6003D1843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA89F88328C500A6003D1843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA89F88928C5030C003D1843 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FA89F88B28C504E6003D1843 /* RecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVC.swift; sourceTree = "<group>"; };
+		FA89F88D28C50518003D1843 /* DetasilVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetasilVC.swift; sourceTree = "<group>"; };
+		FA89F88F28C507B6003D1843 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
+		FA89F8A728C50E6B003D1843 /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		FA89F8A928C510BE003D1843 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		FA89F8AB28C510DB003D1843 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		FA89F8AD28C510EB003D1843 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		FA89F8AF28C512F8003D1843 /* RecordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPresenter.swift; sourceTree = "<group>"; };
+		FA89F8B128C51308003D1843 /* RecordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordInteractor.swift; sourceTree = "<group>"; };
+		FA89F8B328C51316003D1843 /* RecordProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordProtocols.swift; sourceTree = "<group>"; };
+		FA89F8B528C51324003D1843 /* RecordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRouter.swift; sourceTree = "<group>"; };
+		FA89F8B728C51529003D1843 /* ToDoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoPresenter.swift; sourceTree = "<group>"; };
+		FA89F8B928C51536003D1843 /* ToDoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoInteractor.swift; sourceTree = "<group>"; };
+		FA89F8BB28C51544003D1843 /* ToDoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoProtocols.swift; sourceTree = "<group>"; };
+		FA89F8BD28C51553003D1843 /* ToDoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoRouter.swift; sourceTree = "<group>"; };
+		FA89F8BF28C51E21003D1843 /* ToDoApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA89F8C028C51E21003D1843 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		FA89F8C128C51E21003D1843 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		FA89F8C228C51E21003D1843 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		FA89F8C328C51E21003D1843 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		FA89F8C428C51E21003D1843 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		FA89F8C528C51E21003D1843 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		FA89F8C628C51E21003D1843 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		FA89F8C728C51E21003D1843 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		FA89F8C828C51E21003D1843 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		FA89F8C928C51E21003D1843 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		FA89F8CA28C51E21003D1843 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		FA89F8D128C51FBE003D1843 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +94,7 @@
 			children = (
 				FA89F87428C500A4003D1843 /* ToDoApp */,
 				FA89F87328C500A4003D1843 /* Products */,
+				FA89F8D028C51FBE003D1843 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +111,210 @@
 			children = (
 				FA89F87528C500A4003D1843 /* AppDelegate.swift */,
 				FA89F87728C500A4003D1843 /* SceneDelegate.swift */,
-				FA89F87928C500A4003D1843 /* ViewController.swift */,
+				FA89F88028C500A6003D1843 /* LaunchScreen.storyboard */,
 				FA89F87B28C500A4003D1843 /* Main.storyboard */,
 				FA89F87E28C500A6003D1843 /* Assets.xcassets */,
-				FA89F88028C500A6003D1843 /* LaunchScreen.storyboard */,
+				FA89F8A628C50DE8003D1843 /* Entity */,
+				FA89F89328C50C31003D1843 /* todo-module */,
+				FA89F89228C50C2D003D1843 /* record-module */,
+				FA89F89128C50C29003D1843 /* detail-module */,
 				FA89F88328C500A6003D1843 /* Info.plist */,
+				FA4D261228CD1B5300923D8F /* todolist.sqlite */,
+				FA89F8C028C51E21003D1843 /* FMDatabase.h */,
+				FA89F8C428C51E21003D1843 /* FMDatabase.m */,
+				FA89F8C628C51E21003D1843 /* FMDatabaseAdditions.h */,
+				FA89F8C728C51E21003D1843 /* FMDatabaseAdditions.m */,
+				FA89F8CA28C51E21003D1843 /* FMDatabasePool.h */,
+				FA89F8C328C51E21003D1843 /* FMDatabasePool.m */,
+				FA89F8C528C51E21003D1843 /* FMDatabaseQueue.h */,
+				FA89F8C928C51E21003D1843 /* FMDatabaseQueue.m */,
+				FA89F8C128C51E21003D1843 /* FMDB.h */,
+				FA89F8C828C51E21003D1843 /* FMResultSet.h */,
+				FA89F8C228C51E21003D1843 /* FMResultSet.m */,
+				FA89F8BF28C51E21003D1843 /* ToDoApp-Bridging-Header.h */,
 			);
 			path = ToDoApp;
+			sourceTree = "<group>";
+		};
+		FA89F89128C50C29003D1843 /* detail-module */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F89A28C50C72003D1843 /* router */,
+				FA89F89928C50C6E003D1843 /* protocols */,
+				FA89F89828C50C62003D1843 /* interactor */,
+				FA89F89728C50C5F003D1843 /* presenter */,
+				FA89F89628C50C5C003D1843 /* view */,
+			);
+			path = "detail-module";
+			sourceTree = "<group>";
+		};
+		FA89F89228C50C2D003D1843 /* record-module */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F89F28C50CD8003D1843 /* router */,
+				FA89F89E28C50CD4003D1843 /* protocols */,
+				FA89F89D28C50CD0003D1843 /* interactor */,
+				FA89F89C28C50CCA003D1843 /* presenter */,
+				FA89F89B28C50CC1003D1843 /* view */,
+			);
+			path = "record-module";
+			sourceTree = "<group>";
+		};
+		FA89F89328C50C31003D1843 /* todo-module */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8A528C50CED003D1843 /* tableview */,
+				FA89F8A428C50CE9003D1843 /* router */,
+				FA89F8A328C50CE6003D1843 /* protocols */,
+				FA89F8A228C50CE3003D1843 /* interactor */,
+				FA89F8A128C50CDF003D1843 /* presenter */,
+				FA89F8A028C50CDB003D1843 /* view */,
+			);
+			path = "todo-module";
+			sourceTree = "<group>";
+		};
+		FA89F89628C50C5C003D1843 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F88D28C50518003D1843 /* DetasilVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FA89F89728C50C5F003D1843 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8AD28C510EB003D1843 /* DetailPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		FA89F89828C50C62003D1843 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8AB28C510DB003D1843 /* DetailInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		FA89F89928C50C6E003D1843 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8A728C50E6B003D1843 /* DetailProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		FA89F89A28C50C72003D1843 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8A928C510BE003D1843 /* DetailRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		FA89F89B28C50CC1003D1843 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F88B28C504E6003D1843 /* RecordVC.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		FA89F89C28C50CCA003D1843 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8AF28C512F8003D1843 /* RecordPresenter.swift */,
+			);
+			name = presenter;
+			sourceTree = "<group>";
+		};
+		FA89F89D28C50CD0003D1843 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8B128C51308003D1843 /* RecordInteractor.swift */,
+			);
+			name = interactor;
+			sourceTree = "<group>";
+		};
+		FA89F89E28C50CD4003D1843 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8B328C51316003D1843 /* RecordProtocols.swift */,
+			);
+			name = protocols;
+			sourceTree = "<group>";
+		};
+		FA89F89F28C50CD8003D1843 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8B528C51324003D1843 /* RecordRouter.swift */,
+			);
+			name = router;
+			sourceTree = "<group>";
+		};
+		FA89F8A028C50CDB003D1843 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F87928C500A4003D1843 /* ToDoVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FA89F8A128C50CDF003D1843 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8B728C51529003D1843 /* ToDoPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		FA89F8A228C50CE3003D1843 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8B928C51536003D1843 /* ToDoInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		FA89F8A328C50CE6003D1843 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8BB28C51544003D1843 /* ToDoProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		FA89F8A428C50CE9003D1843 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8BD28C51553003D1843 /* ToDoRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		FA89F8A528C50CED003D1843 /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F88928C5030C003D1843 /* TableViewCell.swift */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
+		FA89F8A628C50DE8003D1843 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F88F28C507B6003D1843 /* ToDoList.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FA89F8D028C51FBE003D1843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA89F8D128C51FBE003D1843 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +349,7 @@
 				TargetAttributes = {
 					FA89F87128C500A4003D1843 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -126,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA89F88228C500A6003D1843 /* LaunchScreen.storyboard in Resources */,
+				FA4D261328CD1B5300923D8F /* todolist.sqlite in Resources */,
 				FA89F87F28C500A6003D1843 /* Assets.xcassets in Resources */,
 				FA89F87D28C500A4003D1843 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +390,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA89F87A28C500A4003D1843 /* ViewController.swift in Sources */,
+				FA89F8A828C50E6B003D1843 /* DetailProtocols.swift in Sources */,
+				FA89F8B628C51324003D1843 /* RecordRouter.swift in Sources */,
+				FA89F8AC28C510DB003D1843 /* DetailInteractor.swift in Sources */,
+				FA89F8B428C51316003D1843 /* RecordProtocols.swift in Sources */,
+				FA89F8CC28C51E21003D1843 /* FMDatabasePool.m in Sources */,
+				FA89F88C28C504E6003D1843 /* RecordVC.swift in Sources */,
+				FA89F8B028C512F8003D1843 /* RecordPresenter.swift in Sources */,
+				FA89F8BE28C51553003D1843 /* ToDoRouter.swift in Sources */,
+				FA89F87A28C500A4003D1843 /* ToDoVC.swift in Sources */,
+				FA89F8CD28C51E21003D1843 /* FMDatabase.m in Sources */,
+				FA89F8CE28C51E21003D1843 /* FMDatabaseAdditions.m in Sources */,
+				FA89F8AE28C510EB003D1843 /* DetailPresenter.swift in Sources */,
+				FA89F8B228C51308003D1843 /* RecordInteractor.swift in Sources */,
+				FA89F88A28C5030C003D1843 /* TableViewCell.swift in Sources */,
+				FA89F89028C507B6003D1843 /* ToDoList.swift in Sources */,
+				FA89F8BC28C51544003D1843 /* ToDoProtocols.swift in Sources */,
 				FA89F87628C500A4003D1843 /* AppDelegate.swift in Sources */,
+				FA89F8CF28C51E21003D1843 /* FMDatabaseQueue.m in Sources */,
+				FA89F8CB28C51E21003D1843 /* FMResultSet.m in Sources */,
+				FA89F8B828C51529003D1843 /* ToDoPresenter.swift in Sources */,
+				FA89F8AA28C510BE003D1843 /* DetailRouter.swift in Sources */,
 				FA89F87828C500A4003D1843 /* SceneDelegate.swift in Sources */,
+				FA89F88E28C50518003D1843 /* DetasilVC.swift in Sources */,
+				FA89F8BA28C51536003D1843 /* ToDoInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2595SK9L74;
@@ -303,6 +577,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rukiyesenturk.ToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoApp/ToDoApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +589,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2595SK9L74;
@@ -331,6 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rukiyesenturk.ToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoApp/ToDoApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
